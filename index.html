@@ -38,7 +38,7 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
         .item-card:hover {
-            transform: translateY(-2px);
+            transform: translateY(-4px);
             box-shadow: 0 10px 15px -3px rgba(129, 140, 248, 0.1), 0 4px 6px -2px rgba(129, 140, 248, 0.05);
         }
         /* Amazonボタンの目立つグラデーション */
@@ -68,6 +68,7 @@
         .delay-4 { animation-delay: 0.4s; }
         .delay-5 { animation-delay: 0.5s; }
         .delay-6 { animation-delay: 0.6s; }
+        .delay-7 { animation-delay: 0.7s; }
 
         /* モーダル用スタイル */
         #privacy-modal {
@@ -75,256 +76,213 @@
         }
     </style>
 </head>
-<body class="antialiased min-h-screen flex flex-col font-sans">
+<body class="antialiased min-h-screen flex flex-col font-sans text-slate-200">
 
     <!-- ヘッダー / プロフィールセクション -->
-    <header class="max-w-2xl mx-auto w-full px-4 pt-12 pb-8 text-center fade-in">
+    <header class="max-w-2xl mx-auto w-full px-4 pt-12 pb-8 text-center fade-in text-slate-200">
         <div class="relative inline-block">
             <!-- プロフィールアイコン -->
             <div class="w-24 h-24 rounded-full bg-slate-700 mx-auto flex items-center justify-center border-2 border-accent shadow-[0_0_15px_rgba(129,140,248,0.3)] overflow-hidden">
                 <img src="1770733410185.png" alt="Profile" class="w-full h-full object-cover">
             </div>
             <!-- 月マークの装飾バッジ -->
-            <div class="absolute -bottom-2 -right-2 bg-slate-800 rounded-full p-1.5 shadow-lg flex items-center justify-center w-8 h-8 border border-slate-700">
+            <div class="absolute -bottom-2 -right-2 bg-slate-800 rounded-full p-1.5 shadow-lg flex items-center justify-center w-8 h-8 border border-slate-700 text-slate-200">
                 <i class="fa-solid fa-moon text-accent"></i>
             </div>
         </div>
         
-        <h1 class="mt-4 text-2xl font-bold tracking-wider">睡眠投資家けい<br><span class="text-sm font-normal text-slate-400">@kei_sleep_hack</span></h1>
+        <h1 class="mt-4 text-2xl font-bold tracking-wider text-white">睡眠投資家けい<br><span class="text-sm font-normal text-slate-400 text-slate-400">@kei_sleep_hack</span></h1>
         <p class="mt-3 text-slate-300 text-sm leading-relaxed max-w-md mx-auto">
             睡眠の質は、人生の質。<br>
             科学的アプローチと自身の検証から辿り着いた、<br>
             本当に価値のあるアイテムだけを厳選しました。
         </p>
 
-        <div class="mt-10 mb-2">
+        <div class="mt-10 mb-2 text-center text-slate-200">
             <h2 class="text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple-400 inline-block border-b border-accent/30 pb-2">
                 私の人生を激変させた<br class="md:hidden">「快眠ポートフォリオ」
             </h2>
         </div>
     </header>
 
-    <!-- メインコンテンツ / アフィリエイトリンク 5枠 -->
-    <main class="max-w-2xl mx-auto w-full px-4 flex-grow space-y-5 pb-16">
+    <!-- メインコンテンツ / アフィリエイトリンク 10枠 -->
+    <main class="max-w-4xl mx-auto w-full px-3 sm:px-4 flex-grow pb-16 text-slate-200">
         
-        <!-- アイテム 1 -->
-        <article class="item-card bg-card rounded-2xl p-4 sm:p-5 border border-slate-700/50 flex flex-col sm:flex-row gap-4 fade-in delay-1">
-            <!-- 商品画像エリア -->
-            <div class="w-full sm:w-1/3 aspect-video sm:aspect-square bg-slate-800 rounded-xl flex-shrink-0 flex items-center justify-center relative overflow-hidden group">
-                <img src="813fol8EYtL.jpg" alt="小林製薬 ナイトミン 耳ほぐタイム" class="w-full h-full object-contain p-2">
-            </div>
-            <!-- テキスト＆ボタンエリア -->
-            <div class="flex flex-col justify-between flex-grow">
-                <div>
-                    <h3 class="font-bold text-lg text-white leading-tight mb-1">【小林製薬 ナイトミン 耳ほぐタイム】</h3>
-                    <p class="text-xs text-accent mb-2 font-medium">★★★☆☆ | 脳がとろける</p>
-                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                        「耳を温める」だけで、脳がとろける。<br>
-                        耳栓としての遮音性と、ホッカイロのような温熱効果で眠りの世界に完全没入。<br>
-                        自律神経が整い、強制的に「リラックスモード」へ移行できます。
+        <!-- グリッドコンテナ: 常に2列 (grid-cols-2) -->
+        <div class="grid grid-cols-2 gap-3 sm:gap-6">
+
+            <!-- アイテム 1 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-1 text-slate-200">
+                <div class="w-full aspect-square bg-white flex items-center justify-center relative overflow-hidden group">
+                    <img src="91TvIAb280L._AC_UF1000,1000_QL80_.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">ポッカサッポロ キレートレモン クエン酸 2700</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★☆☆ | 酸っぱさの暴力</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">疲れを物理的に溶かす、「酸っぱさの暴力」。</span><br>
+                        クエン酸2700mgが、全身に蓄積した疲労を強制リセット。サウナに行けない日でも、これを飲れば「簡易ととのい」状態に。この強烈な酸味こそ、効き目の証です。
                     </p>
+                    <a href="https://amzn.to/4rlpFUq" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <!-- Amazonアソシエイトリンク -->
-                <a href="https://amzn.to/4cqpF0B" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-sm text-center py-3 rounded-xl shadow-lg w-full flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-amazon text-lg"></i> Amazonで詳細を見る
-                </a>
-            </div>
-        </article>
+            </article>
 
-        <!-- アイテム 2 -->
-        <article class="item-card bg-card rounded-2xl p-4 sm:p-5 border border-slate-700/50 flex flex-col sm:flex-row gap-4 fade-in delay-2">
-            <div class="w-full sm:w-1/3 aspect-video sm:aspect-square bg-slate-800 rounded-xl flex-shrink-0 flex items-center justify-center relative overflow-hidden group">
-                <img src="images.jpeg" alt="ハウスウェルネスフーズ ネルノダ" class="w-full h-full object-contain p-2">
-            </div>
-            <div class="flex flex-col justify-between flex-grow">
-                <div>
-                    <h3 class="font-bold text-lg text-white leading-tight mb-1">【ハウスウェルネスフーズ ネルノダ 粒タイプ】</h3>
-                    <p class="text-xs text-accent mb-2 font-medium">★★★★☆ | 熟睡感爆上がり</p>
-                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                        「泥のように眠る」を、毎晩の当たり前に。<br>
-                        GABAの力で、熟睡感が爆上がり。<br>飲むと翌朝の「目覚めのキレ」が明らかに違います。<br>
-                        ここぞという時だけでなく、日々のベースアップに。
+            <!-- アイテム 2 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-1 text-slate-200">
+                <div class="w-full aspect-square bg-white flex items-center justify-center relative overflow-hidden group text-slate-200">
+                    <img src="71j5uo+sDwL._AC_UF894,1000_QL80_.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">キユーピー 飲む人のための よいときOne</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★☆ | 二日酔い知らず</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">「二日酔い知らず」の無敵モードへ。</span><br>
+                        1000倍に凝縮された「にごり酢」の酢酸菌酵素が、アルコールを分解。どれだけ深酒した夜も、翌朝は嘘のようにスッキリ。
                     </p>
+                    <a href="https://amzn.to/3ZEeFFr" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <!-- Amazonアソシエイトリンク -->
-                <a href="https://amzn.to/4aiYulC" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-sm text-center py-3 rounded-xl shadow-lg w-full flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-amazon text-lg"></i> Amazonで詳細を見る
-                </a>
-            </div>
-        </article>
+            </article>
 
-        <!-- アイテム 3 -->
-        <article class="item-card bg-card rounded-2xl p-4 sm:p-5 border border-slate-700/50 flex flex-col sm:flex-row gap-4 fade-in delay-3">
-            <div class="w-full sm:w-1/3 aspect-video sm:aspect-square bg-slate-800 rounded-xl flex-shrink-0 flex items-center justify-center relative overflow-hidden group">
-                <img src="A90_2410003_06_0_20250404170421_psz.jpg" alt="AOKI 疲労回復ウェア" class="w-full h-full object-contain p-2">
-            </div>
-            <div class="flex flex-col justify-between flex-grow">
-                <div>
-                    <h3 class="font-bold text-lg text-white leading-tight mb-1">【AOKI 疲労回復ウェア リカバリーケアプラス】</h3>
-                    <p class="text-xs text-accent mb-2 font-medium">★★★★★ | パジャマは医療機器</p>
-                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                        「パジャマは医療機器」という新常識。<br>
-                        あのスーツのAOKIが本気で作った、血行促進ウェア。ロゴすらない極めてシンプルなデザインで、男女問わず着られます。<br>
-                        着て寝るだけで、翌日の疲労感が明らかに軽減されます。
+            <!-- アイテム 3 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-2 text-slate-200">
+                <div class="w-full aspect-square bg-white flex items-center justify-center relative overflow-hidden group">
+                    <img src="61lxI1i1r4L._AC_UF894,1000_QL80_.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">シークリスタルス エプソムソルト</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★☆ | 自宅サウナ体験</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">自宅のお風呂が「プライベートサウナ」に。</span><br>
+                        とにかく汗が止まらない。15分浸かれば毛穴中から汗が噴き出し、深部体温が急上昇。その反動で体温が下がるとき、気絶するように深く眠れます。
                     </p>
+                    <a href="https://amzn.to/4aOvcNb" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <!-- Amazonアソシエイトリンク -->
-                <a href="https://amzn.to/3ZRtcOh" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-sm text-center py-3 rounded-xl shadow-lg w-full flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-amazon text-lg"></i> Amazonで詳細を見る
-                </a>
-            </div>
-        </article>
+            </article>
 
-        <!-- アイテム 4 -->
-        <article class="item-card bg-card rounded-2xl p-4 sm:p-5 border border-slate-700/50 flex flex-col sm:flex-row gap-4 fade-in delay-4">
-            <div class="w-full sm:w-1/3 aspect-video sm:aspect-square bg-slate-800 rounded-xl flex-shrink-0 flex items-center justify-center relative overflow-hidden group">
-                <img src="51BSGmq075L._AC_UF894,1000_QL80_.jpg" alt="BRAIN SLEEP ピロー" class="w-full h-full object-contain p-2">
-            </div>
-            <div class="flex flex-col justify-between flex-grow">
-                <div>
-                    <h3 class="font-bold text-lg text-white leading-tight mb-1">【BRAIN SLEEP ブレインスリープ ピロー】</h3>
-                    <p class="text-xs text-accent mb-2 font-medium">★★★★★ | 脳の冷却装置</p>
-                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                        脳を冷やして、速攻で「深部体温」を下げる枕。<br>
-                        抜群の通気性で、睡眠の敵である「頭の熱」を瞬時に放出。<br>入眠直後から一番深い眠りに入れる、まさに脳の冷却装置です。
+            <!-- アイテム 4 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-2 text-slate-200">
+                <div class="w-full aspect-square bg-slate-800 flex items-center justify-center relative overflow-hidden group">
+                    <img src="A90_2410003_06_0_20250404170421_psz.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">AOKI 疲労回復ウェア リカバリーケアプラス</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★★ | パジャマは医療機器</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">「パジャマは医療機器」という新常識。</span><br>
+                        あのスーツのAOKIが本気で作った、血行促進ウェア。ロゴすらない極めてシンプルなデザインで、男女問わず着られます。着て寝るだけで、翌日の疲労感が明らかに軽減されます。
                     </p>
+                    <a href="https://amzn.to/3My4krv" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <!-- Amazonアソシエイトリンク -->
-                <a href="https://amzn.to/4rGI4up" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-sm text-center py-3 rounded-xl shadow-lg w-full flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-amazon text-lg"></i> Amazonで詳細を見る
-                </a>
-            </div>
-        </article>
+            </article>
 
-        <!-- アイテム 5 -->
-        <article class="item-card bg-card rounded-2xl p-4 sm:p-5 border border-slate-700/50 flex flex-col sm:flex-row gap-4 fade-in delay-5">
-            <div class="w-full sm:w-1/3 aspect-video sm:aspect-square bg-slate-800 rounded-xl flex-shrink-0 flex items-center justify-center relative overflow-hidden group">
-                <img src="61+1KqpK9WL._AC_UF894,1000_QL80_.jpg" alt="koala オリジナルコアラマットレス" class="w-full h-full object-contain p-2">
-            </div>
-            <div class="flex flex-col justify-between flex-grow">
-                <div>
-                    <h3 class="font-bold text-lg text-white leading-tight mb-1">【koala オリジナルコアラマットレス シングル】</h3>
-                    <p class="text-xs text-accent mb-2 font-medium">★★★★★ | 振動ストレス皆無</p>
-                    <p class="text-sm text-slate-300 mb-4 leading-relaxed">
-                        「隣で誰が動こうとも、私の眠りは揺るがない」。<br>
-                        ワイングラスも倒れない振動吸収性が凄まじく、妻が起きても気づかないレベル。<br>寝返りの振動ストレスが皆無になり、「朝まで一度も目が覚めない」完走体験が手に入ります。
+            <!-- アイテム 5 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-3 text-slate-200">
+                <div class="w-full aspect-square bg-white flex items-center justify-center relative overflow-hidden group text-slate-200">
+                    <img src="711Nc8qwJrL._AC_UF894,1000_QL80_.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">ShaktiMat（シャクティマット）</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★★ | 物理的入眠スイッチ</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">最初は激痛、その後に訪れる「気絶級の寝落ち」。</span><br>
+                        数千本のトゲトゲが血流を爆発的に促進し、3分耐えると背中がカッと熱くなる。強制的に副交感神経を優位にする、私の「物理的入眠スイッチ」です。
                     </p>
+                    <a href="https://amzn.to/4rWBkJj" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto text-slate-200">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <!-- Amazonアソシエイトリンク -->
-                <a href="https://amzn.to/3ZtoXIq" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-sm text-center py-3 rounded-xl shadow-lg w-full flex items-center justify-center gap-2">
-                    <i class="fa-brands fa-amazon text-lg"></i> Amazonで詳細を見る
-                </a>
-            </div>
-        </article>
+            </article>
 
-        <!-- 今後の更新を期待させる表示 -->
-        <div class="text-center py-6 fade-in delay-6 opacity-70">
-            <p class="text-2xl font-light text-slate-500 tracking-[0.2em] italic font-serif">and more...</p>
-            <p class="text-[10px] text-slate-600 mt-2 tracking-wider uppercase">Coming Soon</p>
-        </div>
-
-        <!-- Threads プロフィールセクション -->
-        <section class="mt-4 fade-in delay-6">
-            <div class="bg-slate-800/60 rounded-2xl p-6 border border-slate-700/50 text-center backdrop-blur-sm">
-                <div class="flex items-center justify-center gap-2 mb-4">
-                     <i class="fa-brands fa-threads text-3xl text-white"></i>
-                     <span class="text-xl font-bold text-white tracking-wide">Threadsで発信中</span>
+            <!-- アイテム 6 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-3 text-slate-200">
+                <div class="w-full aspect-square bg-slate-800 flex items-center justify-center relative overflow-hidden group">
+                    <img src="images.jpeg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <h3 class="font-bold text-lg text-white mb-3 tracking-wide">睡眠投資家けい｜CPAPで人生変わった</h3>
-                <div class="text-slate-300 text-sm leading-relaxed mb-6 text-left inline-block bg-slate-900/50 p-4 rounded-xl border border-slate-700/30 w-full">
-                    <p class="mb-1">＼日中の「強烈な眠気」にサヨナラ／</p>
-                    <p class="mb-1">□ オルカンより確実な投資先は「睡眠」</p>
-                    <p class="mb-1">□ CPAPや快眠アイテムで「睡眠負債」を完済</p>
-                    <p>30代会社員｜最強の睡眠ハック術</p>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200 text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white text-white">ハウスウェルネスフーズ ネルノダ 粒タイプ</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★☆ | 泥のように眠る</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white text-white font-bold">「泥のように眠る」を、毎晩の当たり前に。</span><br>
+                        GABAの力で、熟睡感が爆上がり。飲むと翌朝の「目覚めのキレ」が明らかに違います。ここぞという時だけでなく、日々のベースアップに。
+                    </p>
+                    <a href="https://amzn.to/3MF4AoK" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto text-slate-200">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg text-slate-200"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <a href="https://www.threads.com/@kei_sleep_hack" target="_blank" rel="noopener" class="block w-full bg-white text-black font-bold py-3 rounded-xl hover:bg-slate-200 transition-colors shadow-lg">
-                    @kei_sleep_hack をフォローする
-                </a>
-            </div>
-        </section>
+            </article>
 
-    </main>
-
-    <!-- フッター（制約事項・プライバシーポリシー） -->
-    <footer class="mt-auto py-8 text-center text-xs text-slate-400 border-t border-slate-800 bg-slate-900/80">
-        <div class="max-w-2xl mx-auto px-4">
-            <p class="mb-2">※商品の価格や詳細はAmazonのページにてご確認ください。</p>
-            <p class="font-medium text-slate-300 mb-4">このサイトはAmazonアソシエイトプログラムに参加しています。</p>
-            
-            <!-- プライバシーポリシーへのリンク -->
-            <button onclick="toggleModal()" class="text-slate-500 hover:text-accent underline transition-colors">
-                プライバシーポリシー・免責事項
-            </button>
-            
-            <p class="mt-5 text-slate-600">&copy; 2026 睡眠投資家けい. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- プライバシーポリシー・モーダル -->
-    <div id="privacy-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/70 p-4 opacity-0 transition-opacity duration-300">
-        <div class="bg-card border border-slate-700 rounded-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
-            <div class="p-6">
-                <div class="flex justify-between items-center mb-4 border-b border-slate-700 pb-2">
-                    <h2 class="text-lg font-bold text-white">プライバシーポリシー・免責事項</h2>
-                    <button onclick="toggleModal()" class="text-slate-400 hover:text-white">
-                        <i class="fa-solid fa-xmark text-xl"></i>
-                    </button>
+            <!-- アイテム 7 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-4 text-slate-200">
+                <div class="w-full aspect-square bg-white flex items-center justify-center relative overflow-hidden group">
+                    <img src="81I+t4noHkL.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="text-slate-300 text-sm space-y-4 text-left leading-relaxed">
-                    <div>
-                        <h3 class="font-bold text-white mb-1">Amazonアソシエイト・プログラムについて</h3>
-                        <p>当サイトは、Amazon.co.jpを宣伝しリンクすることによってサイトが紹介料を獲得できる手段を提供することを目的に設定されたアフィリエイトプログラムである、Amazonアソシエイト・プログラムの参加者です。</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-white mb-1">個人情報の利用とCookieについて</h3>
-                        <p>第三者がコンテンツおよび宣伝を提供し、訪問者から直接情報を収集し、訪問者のブラウザにCookie（クッキー）を設定したりこれを認識したりする場合があります。これにより、当サイト経由で商品を購入された際の情報がAmazon側に提供されますが、お名前や住所などの個人情報が当サイト管理者に開示されることはありません。</p>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-white mb-1">免責事項</h3>
-                        <p>当サイトに掲載されている商品情報については、可能な限り正確な情報を掲載するよう努めておりますが、その正確性や安全性を保証するものではありません。当サイトに掲載された内容によって生じた損害等の一切の責任を負いかねますのでご了承ください。商品の詳細や価格については、リンク先のAmazonページにてご確認ください。</p>
-                    </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">金鳥 シンカトリ 200日 セット</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★☆☆ | 最強の防衛システム</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">耳元の「プーン」という絶望、これで終わらせます。</span><br>
+                        コンセント不要、置くだけで200日、蚊を完全シャットアウト。音もニオイも一切なし。夏場の安眠を死守する、最強の防衛システムです。
+                    </p>
+                    <a href="https://amzn.to/4kElnFd" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
                 </div>
-                <div class="mt-6 text-center">
-                    <button onclick="toggleModal()" class="bg-slate-700 hover:bg-slate-600 text-white py-2 px-6 rounded-lg transition-colors">
-                        閉じる
-                    </button>
+            </article>
+
+            <!-- アイテム 8 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-4 text-slate-200 text-slate-200">
+                <div class="w-full aspect-square bg-white flex items-center justify-center relative overflow-hidden group text-slate-200">
+                    <img src="61+1KqpK9WL._AC_UF894,1000_QL80_.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200 text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white text-white">koala オリジナルコアラマットレス シングル</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★★ | 振動ストレス皆無</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300 text-slate-200 text-slate-300">
+                        <span class="font-bold text-white text-white font-bold">「隣で誰が動こうとも、私の眠りは揺るがない」。</span><br>
+                        ワイングラスも倒れない振動吸収性が凄まじく、妻が起きても気づかないレベル。寝返りの振動ストレスが皆無になり、「朝まで一度も目が覚めない」完走体験が手に入ります。
+                    </p>
+                    <a href="https://amzn.to/4auWfMi" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto text-slate-200">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg text-slate-200"></i>
+                        <span class="hidden sm:inline">Amazonで詳細を見る</span>
+                        <span class="sm:hidden">詳細を見る</span>
+                    </a>
+                </div>
+            </article>
 
-    <script>
-        function toggleModal() {
-            const modal = document.getElementById('privacy-modal');
-            const content = document.getElementById('modal-content');
-            
-            if (modal.classList.contains('hidden')) {
-                // Open
-                modal.classList.remove('hidden');
-                setTimeout(() => {
-                    modal.classList.remove('opacity-0');
-                    content.classList.remove('scale-95');
-                    content.classList.add('scale-100');
-                }, 10);
-            } else {
-                // Close
-                modal.classList.add('opacity-0');
-                content.classList.remove('scale-100');
-                content.classList.add('scale-95');
-                setTimeout(() => {
-                    modal.classList.add('hidden');
-                }, 300);
-            }
-        }
-
-        // 背景クリックで閉じる
-        document.getElementById('privacy-modal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                toggleModal();
-            }
-        });
-    </script>
-</body>
-</html>
-
-
+            <!-- アイテム 9 -->
+            <article class="item-card bg-card rounded-2xl border border-slate-700/50 flex flex-col h-full overflow-hidden fade-in delay-5 text-slate-200">
+                <div class="w-full aspect-square bg-slate-800 flex items-center justify-center relative overflow-hidden group">
+                    <img src="51BSGmq075L._AC_UF894,1000_QL80_.jpg" alt="" class="w-full h-full object-contain p-2 sm:p-4 group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-3 sm:p-5 flex flex-col flex-grow text-slate-200">
+                    <h3 class="font-bold text-sm sm:text-lg text-white leading-tight mb-1 text-white">BRAIN SLEEP ブレインスリープ ピロー</h3>
+                    <p class="text-[10px] sm:text-xs text-accent mb-2 sm:mb-3 font-medium">★★★★★ | 脳の冷却装置</p>
+                    <p class="text-xs sm:text-sm text-slate-300 mb-4 sm:mb-6 leading-relaxed flex-grow text-slate-300">
+                        <span class="font-bold text-white">脳を冷やして、速攻で「深部体温」を下げる枕。</span><br>
+                        抜群の通気性で、睡眠の敵である「頭の熱」を瞬時に放出。入眠直後から一番深い眠りに入れる、まさに脳の冷却装置です。
+                    </p>
+                    <a href="https://amzn.to/4bV3uj4" target="_blank" rel="noopener" class="btn-amazon text-white font-bold text-[10px] sm:text-sm text-center py-2 sm:py-3 rounded-lg sm:rounded-xl shadow-lg w-full flex items-center justify-center gap-1 sm:gap-2 mt-auto">
+                        <i class="fa-brands fa-amazon text-sm sm:text-lg"></i>
+                        <span class=
